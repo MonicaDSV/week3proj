@@ -1,1 +1,14 @@
-<h1>This is our index template!</h1>
+<head>
+    <h1>To Do List</h1>
+</head>
+
+{% if courses %}
+    <ul>
+    {% for course in courses %}
+        <li>course.course_name}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Courses have been added.</p>
+{% endif %}
+
