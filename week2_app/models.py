@@ -8,8 +8,8 @@ class Course(models.Model):
         return "%s" % (self.course_name)
 
 class Task(models.Model):
-    discription = models.CharField(max_length=200)
-    time_due = models.DateTimeField
+    description = models.CharField(max_length=200)
+    time_due = models.DateTimeField()
 
     def __str__ (self):
-        return "%s due: %s" % (self.discription, self.time_due)
+        return "%s due: %s" % (self.description, self.time_due)

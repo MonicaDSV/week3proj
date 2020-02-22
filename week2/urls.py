@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
-#monica was here
+
 
 
