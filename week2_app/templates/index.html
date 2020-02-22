@@ -5,7 +5,7 @@
     <ul>
     {% for course in courses %}
         <li><a>{{course.course_name}}</a></li>
-        {{form}}
+        {{taskForm}}
         <form method="POST">
 
             {% csrf_token %}
@@ -16,6 +16,13 @@
     </ul>
 {% else %}
     <p>No Courses have been added.</p>
-    {% endif %}
+{% endif %}
+
+{{addCourse}}
+        <form method="POST">
+
+            {% csrf_token %}
+            <input type="submit" name="add" value="add">
+           </form>
 
 {% endblock %}
